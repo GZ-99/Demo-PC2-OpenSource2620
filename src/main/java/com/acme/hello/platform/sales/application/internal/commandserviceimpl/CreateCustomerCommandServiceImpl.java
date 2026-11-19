@@ -7,7 +7,9 @@ import com.acme.hello.platform.sales.domain.model.valueobjects.Address;
 import com.acme.hello.platform.sales.domain.model.valueobjects.Dni;
 import com.acme.hello.platform.sales.domain.model.valueobjects.EMail;
 import com.acme.hello.platform.sales.domain.repositories.ICustomerRepository;
+import org.springframework.stereotype.Service;
 
+@Service
 public class CreateCustomerCommandServiceImpl implements CreateCustomerCommandService {
     private final ICustomerRepository customerRepository;
     public CreateCustomerCommandServiceImpl(ICustomerRepository customerRepository) {

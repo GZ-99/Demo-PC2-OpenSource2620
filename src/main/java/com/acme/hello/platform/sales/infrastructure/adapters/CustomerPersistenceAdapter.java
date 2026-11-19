@@ -4,9 +4,11 @@ import com.acme.hello.platform.sales.domain.model.aggregates.Customer;
 import com.acme.hello.platform.sales.domain.repositories.ICustomerRepository;
 import com.acme.hello.platform.sales.infrastructure.assemblers.CustomerPersistenceAssembler;
 import com.acme.hello.platform.sales.infrastructure.repositories.ICustomerJpaRepository;
+import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 
+@Repository
 public class CustomerPersistenceAdapter implements ICustomerRepository {
     private final ICustomerJpaRepository customerJpaRepository;
 
